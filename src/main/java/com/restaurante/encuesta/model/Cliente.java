@@ -16,8 +16,13 @@ public class Cliente {
     private Integer idCliente;
     @Column(name = "NOMBRE_CLIENTE", nullable = false)
     private String nombreCliente;
+    @Column(name = "CORREO", nullable = false)
+    private String correo;
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
     @JsonIgnore
     private List<RespuestaAbierta> respuestaAbiertas;
-}
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
+    @JsonIgnore
+    private List<RespuestaMultiple> respuestaMultiples;
 
+}
