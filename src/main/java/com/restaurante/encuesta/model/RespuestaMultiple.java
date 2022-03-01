@@ -1,5 +1,7 @@
 package com.restaurante.encuesta.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -13,6 +15,7 @@ public class RespuestaMultiple {
     private Integer idRespuestaMultiple;
     @ManyToOne
     @JoinColumn(name = "ID_PREGUNTA", referencedColumnName = "ID_PREGUNTA")
+    @JsonIgnore
     private Pregunta pregunta;
     @ManyToOne
     @JoinColumn(name = "ID_OPCION_MULTIPLE", referencedColumnName = "ID_OPCION_MULTIPLE")

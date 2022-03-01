@@ -15,6 +15,14 @@ ErrorDetail {
     private String title;
     private String detail;
 
+    public ErrorDetail(){ }
+    public ErrorDetail(long timeStamp, int status, String title, String detail) {
+        this.timeStamp = timeStamp;
+        this.status = status;
+        this.title = title;
+        this.detail = detail;
+    }
+
     /**
      * un mapa de errores de validación, si es que corresponde.
      * Por ejemplo:

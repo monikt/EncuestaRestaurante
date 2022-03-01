@@ -28,7 +28,7 @@ public class OpcionMultiple {
     @JoinColumn(name = "ID_PREGUNTA", referencedColumnName = "ID_PREGUNTA")
     @JsonIgnore
     private Pregunta pregunta;
-    @OneToMany(mappedBy = "opcionMultiple", cascade = CascadeType.ALL)
+    @OneToMany (mappedBy = "opcionMultiple", cascade = CascadeType.ALL)
     @JsonIgnore
     private List<RespuestaMultiple> respuestaMultiples;
 

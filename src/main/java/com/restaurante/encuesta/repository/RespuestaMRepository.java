@@ -14,7 +14,7 @@ import java.util.Optional;
 @Repository
 public interface RespuestaMRepository extends JpaRepository<RespuestaMultiple,Integer> {
  List <RespuestaMultiple> findByPregunta(Pregunta p);
-Optional <RespuestaMultiple> findByPreguntaAndCliente(Pregunta p, Cliente c);
+ Optional<RespuestaMultiple> findByPreguntaAndClienteAndOpcionMultiple_IdOpcionMultiple(Pregunta p, Cliente c, Integer idOpcMultiple);
  @Query(nativeQuery = false, value = "select e from RespuestaMultiple e inner join e.pregunta p inner join p.encuesta " +
          " where p.encuesta.id_encuesta = :id")
  List<RespuestaMultiple> respuestaMultiplesxEncuesta(@Param("id") Integer id);

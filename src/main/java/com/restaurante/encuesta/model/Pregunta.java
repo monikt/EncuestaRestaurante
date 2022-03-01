@@ -27,10 +27,8 @@ public class Pregunta {
     @OneToMany(mappedBy = "pregunta", cascade = CascadeType.ALL)
     private List<OpcionMultiple> opcionesMultiples;
     @OneToMany(mappedBy = "pregunta", cascade = CascadeType.ALL)
-    @JsonIgnore
     private List<RespuestaAbierta>  respuestaAbiertas;
     @OneToMany(mappedBy = "pregunta", cascade = CascadeType.ALL)
-    @JsonIgnore
     private List<RespuestaMultiple> respuestaMultiples;
 
 

@@ -1,5 +1,7 @@
 package com.restaurante.encuesta.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -16,7 +18,8 @@ public class RespuestaAbierta {
     private String textoRespuesta;
     @ManyToOne
     @JoinColumn(name = "ID_PREGUNTA", referencedColumnName = "ID_PREGUNTA")
-     private Pregunta pregunta;
+    @JsonIgnore
+    private Pregunta pregunta;
     @ManyToOne
     @JoinColumn(name = "ID_CLIENTE", referencedColumnName = "ID_CLIENTE")
     private Cliente cliente;

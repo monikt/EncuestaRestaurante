@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityNotFoundException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -33,8 +34,12 @@ public class EncuestaController {
         encuestas.forEach(encuesta -> encuesta.getPreguntas().forEach(pregunta -> {
                             pregunta.setOpcionesMultiples(pregunta.getOpcionesMultiples().stream()
                                     .sorted((o1, o2) -> o1.getLetra().compareTo(o2.getLetra())).collect(Collectors.toList()));
+                            pregunta.setRespuestaAbiertas(new ArrayList<>());
+                            pregunta.setRespuestaMultiples(new ArrayList<>());
                         }
+
                 )
+
         );
         return encuestas;
     }
@@ -45,13 +50,13 @@ public class EncuestaController {
         encuesta.getPreguntas().forEach(pregunta -> {
                     pregunta.setOpcionesMultiples(pregunta.getOpcionesMultiples().stream()
                             .sorted((o1, o2) -> o1.getLetra().compareTo(o2.getLetra())).collect(Collectors.toList()));
+                    pregunta.setRespuestaAbiertas(new ArrayList<>());
+                    pregunta.setRespuestaMultiples(new ArrayList<>());
                 }
         );
 
         return encuesta;
     }
-
-
 
 
 }
