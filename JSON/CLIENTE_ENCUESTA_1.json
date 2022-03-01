@@ -1,0 +1,150 @@
+[
+    {
+        "id_pregunta": 1,
+        "textoPregunta": "¿Considera mala la atención al cliente? puede indicar su opinión",
+        "tipoPregunta": {
+            "idTipo": 1,
+            "tipoPregunta": "ABIERTA"
+        },
+        "opcionesMultiples": [],
+        "respuestaAbiertas": [
+            {
+                "textoRespuesta": "No, en general me atendieron muy bien y la comida fue muy deliciosa",
+                "cliente": {
+                    "nombreCliente": "Maria Perez",
+                    "correo": "monica.cas198@gmail.com"
+                }
+            }
+        ],
+        "respuestaMultiples": []
+    },
+    {
+        "id_pregunta": 2,
+        "textoPregunta": "Que aspectos mejoraría con respecto a las instalaciones de la sede",
+        "tipoPregunta": {
+            "idTipo": 1,
+            "tipoPregunta": "ABIERTA"
+        },
+        "opcionesMultiples": [],
+        "respuestaAbiertas": [
+            {
+                "textoRespuesta": "El baño, no me gusto el color",
+                "cliente": {
+                    "nombreCliente": "Maria Perez",
+                    "correo": "monica.cas198@gmail.com"
+                }
+            }
+        ],
+        "respuestaMultiples": []
+    },
+    {
+        "id_pregunta": 3,
+        "textoPregunta": "Seleccione la opción que identifica, mejor la atención al cliente de la sede",
+        "tipoPregunta": {
+            "idTipo": 2,
+            "tipoPregunta": "SELEC_MULTIPLE"
+        },
+        "opcionesMultiples": [
+            {
+                "idOpcionMultiple": 2,
+                "textoOpcionMultiple": "a. Excelente",
+                "letra": "a"
+            },
+            {
+                "idOpcionMultiple": 3,
+                "textoOpcionMultiple": "b. No me gusta",
+                "letra": "b"
+            },
+            {
+                "idOpcionMultiple": 4,
+                "textoOpcionMultiple": "c. Buena",
+                "letra": "c"
+            },
+            {
+                "idOpcionMultiple": 1,
+                "textoOpcionMultiple": "d. No agradable",
+                "letra": "d"
+            }
+        ],
+        "respuestaAbiertas": [],
+        "respuestaMultiples": [
+            {
+                "opcionMultiple": {
+                    "idOpcionMultiple": 3,
+                    "textoOpcionMultiple": "b. No me gusta",
+                    "letra": "b"
+                },
+                "cliente": {
+                    "nombreCliente": "Maria Perez",
+                    "correo": "monica.cas198@gmail.com"
+                }
+            },
+            {
+                "opcionMultiple": {
+                    "idOpcionMultiple": 1,
+                    "textoOpcionMultiple": "d. No agradable",
+                    "letra": "d"
+                },
+                "cliente": {
+                    "nombreCliente": "Maria Perez",
+                    "correo": "monica.cas198@gmail.com"
+                }
+            }
+        ]
+    },
+    {
+        "id_pregunta": 4,
+        "textoPregunta": "¿Como le parecio la comida",
+        "tipoPregunta": {
+            "idTipo": 2,
+            "tipoPregunta": "SELEC_MULTIPLE"
+        },
+        "opcionesMultiples": [
+            {
+                "idOpcionMultiple": 7,
+                "textoOpcionMultiple": "a. Excelente",
+                "letra": "a"
+            },
+            {
+                "idOpcionMultiple": 8,
+                "textoOpcionMultiple": "b. No me gusto",
+                "letra": "b"
+            },
+            {
+                "idOpcionMultiple": 9,
+                "textoOpcionMultiple": "c. Buena",
+                "letra": "c"
+            },
+            {
+                "idOpcionMultiple": 10,
+                "textoOpcionMultiple": "d. Bastante Desagradable",
+                "letra": "d"
+            }
+        ],
+        "respuestaAbiertas": [],
+        "respuestaMultiples": [
+            {
+                "opcionMultiple": {
+                    "idOpcionMultiple": 10,
+                    "textoOpcionMultiple": "d. Bastante Desagradable",
+                    "letra": "d"
+                },
+                "cliente": {
+                    "nombreCliente": "Maria Perez",
+                    "correo": "monica.cas198@gmail.com"
+                }
+            },
+            {
+                "opcionMultiple": {
+                    "idOpcionMultiple": 8,
+                    "textoOpcionMultiple": "b. No me gusto",
+                    "letra": "b"
+                },
+                "cliente": {
+                    "nombreCliente": "Maria Perez",
+                    "correo": "monica.cas198@gmail.com"
+                }
+            }
+        ]
+    }
+]

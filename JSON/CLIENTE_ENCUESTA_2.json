@@ -1,0 +1,21 @@
+[
+    {
+         "id_pregunta": 10,
+            "textoPregunta": "¿El platillo Fuerte pasta a la Carbonara que tal le parece?",
+            "tipoPregunta": {
+                "idTipo": 1,
+                "tipoPregunta": "ABIERTA"
+            },
+        "opcionesMultiples": [],
+        "respuestaAbiertas": [
+            {
+                "textoRespuesta": "La pasta estaba deliciosa, tenia muy buena proteina y buen queso, me encanto",
+                "cliente": {
+                    "nombreCliente": "Maria Perez",
+                    "correo": "monica.cas198@gmail.com"
+                }
+            }
+        ],
+        "respuestaMultiples": []
+    }
+]
